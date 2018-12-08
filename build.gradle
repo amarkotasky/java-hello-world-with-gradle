@@ -77,21 +77,4 @@ task wrapper(type: Wrapper) {
 // end::wrapper[]
 
 
-artifactory {
-    contextUrl = "http://54.254.232.223:8081/artifactory"
-    publish {
-        repository {
-            repoKey = 'nocnoc-qa-gradle'
-            username = "admin"
-            password = "Admin123"
-            maven = true
 
-        }       
-        defaults {
-            publications ('mavenJava')
-        }
-    }
-}
-artifactoryPublish { 
-    dependsOn jar
-}
