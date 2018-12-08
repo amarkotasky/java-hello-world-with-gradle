@@ -43,6 +43,7 @@ plugins {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
+apply plugin: "com.jfrog.bintray"
 
 mainClassName = 'hello.HelloWorld'
 
